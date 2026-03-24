@@ -3,34 +3,43 @@
 ## Summary
 Fixed critical routing failures in a legacy PHP hospital system, resolving HTTP 404 errors across multiple modules and restoring system stability in a production environment without a full system rewrite.
 
+> Note: This repository contains a simplified and sanitized representation of a real-world legacy system issue. The focus is on demonstrating the debugging and routing fixes applied.
+
 ---
 
 ## Impact
-- Resolved HTTP 404 errors across multiple internal modules  
-- Restored access to critical hospital functionalities  
-- Stabilized production system without downtime-heavy changes  
-- Improved reliability of workflows used by clinical staff  
-- Performed fixes in a live production environment under operational constraints  
+- Resolved HTTP 404 errors across multiple modules  
+- Restored critical system functionality  
+- Stabilized production workflows used by clinical staff  
+- Executed fixes in a live production environment under operational constraints  
+
+---
+
+## My Contribution
+- Diagnosed and fixed routing failures across the system  
+- Identified and resolved broken URL handling and path resolution issues  
+- Restored module-level functionality without a full rewrite  
+- Applied fixes across multiple parts of the codebase in a production environment  
 
 ---
 
 ## Problem
-The legacy system suffered from:
-- Undocumented PHP codebase  
+The system suffered from:
+- Undocumented and inconsistent PHP codebase  
 - Broken internal routing logic  
 - Incorrect URL path handling  
-- Multiple HTTP 404 failures in production  
+- Repeated HTTP 404 failures in production  
 
 These issues disrupted internal workflows and reduced system reliability.
 
 ---
 
 ## Solution
-- Reverse-engineered the legacy PHP application structure  
-- Identified broken routing patterns and URL handling issues  
+- Reverse-engineered the legacy application structure  
+- Identified broken routing patterns and failure points  
 - Fixed path resolution and routing logic  
-- Restored module-level functionality without a full rewrite  
 - Applied incremental fixes to minimize production risk  
+- Stabilized the system without introducing breaking changes  
 
 ---
 
@@ -85,7 +94,7 @@ Routing handled via Apache `mod_rewrite` with corrected path resolution.
   Prioritized restoring functionality quickly without high-risk system migration  
 
 - **Incremental debugging**  
-  Isolated and resolved issues step-by-step  
+  Isolated and resolved issues step-by-step to reduce production risk  
 
 - **Leverage existing infrastructure**  
   Used Apache routing instead of introducing new systems  
@@ -96,7 +105,7 @@ Routing handled via Apache `mod_rewrite` with corrected path resolution.
 - Refactor routing into a maintainable structure  
 - Add documentation for legacy components  
 - Introduce logging and monitoring  
-- Gradually migrate to modern backend frameworks  
+- Gradually migrate to a modern backend framework  
 
 ---
 
