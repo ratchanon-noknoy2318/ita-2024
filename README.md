@@ -1,5 +1,7 @@
 # Legacy PHP Routing Fix
 
+![PHP Legacy](https://img.shields.io/badge/PHP-Legacy-777bb3)
+
 ## Summary
 Fixed critical routing failures in a legacy PHP hospital system, resolving HTTP 404 errors across multiple modules and restoring system stability in a production environment without a full system rewrite.
 
